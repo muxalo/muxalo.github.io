@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS home work 2</title>
+</head>
+<body>
+	<div>
+		<script>
+		
+			var n = 5;
+			var arrayOfNames = [];
+		//	var arrayOfNames = ['Олег', 'Андрей', 'Женя', 'Коля', 'Маргарин'];
+			
+			for ( var i = 0; i < n; i++ ) {
+				arrayOfNames[i] = prompt('Введите имя');
+			}
+			
+			console.log('Массив имен', arrayOfNames);
+			
+			var name = prompt('Введите имя пользователя');
+			
+			if ( findName(name, arrayOfNames) ) {
+				alert( name + ', вы вошли успешно.' );
+			} else {
+				alert( 'Вместо "' + name + '" должно быть имя текущего пользователя.' );
+			}
+			
+			function findName(a, array) {
+				for ( i = 0; i < array.length; i++ ) {
+					if ( a == array[i] ) {
+						console.log('Найдено совпадение', a);
+						return true;
+					}
+				}
+				console.log('Не найдено', a);
+			}
+			
+		</script>
+	</div>
+</body>
+</html>

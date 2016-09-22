@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS home work 1</title>
+</head>
+<body>
+	<div>
+		<script>
+		
+			var base = prompt("Введите число:");
+			var exp = prompt("Введите степень:");
+			
+			var powResult = pow(base, exp);
+			
+			if ( typeof(powResult) != 'number' ) {
+				alert( 'Введены некоректные данные.' );
+			} else {
+				alert( 'Число ' + base + ' в степени ' + exp + ' равно ' + powResult );
+			}
+		
+			function pow(a, b) {
+				var a = Number(a);
+				var b = Number(b);
+				
+				console.log('a = ', a);
+				console.log('b = ', b);
+				
+				if ( Math.floor(b) == b ) {
+					var result = 1;
+					
+					for ( var i = 0; i < mod(b); i++ ) {
+						result = result * a;
+					}
+					
+					if ( b >= 0 ) {
+						console.log('result = ', result);
+						return result;
+					} else {
+						result = 1 / result;
+						console.log('result = ', result);
+						return result;
+					}
+				} else {
+					return result;
+				}
+				
+			}
+			
+			function mod(a) {
+				if (a >=0 ) {
+					return a;
+				} else {
+					return - a;
+				}
+			}
+			
+		</script>
+	</div>
+</body>
+</html>

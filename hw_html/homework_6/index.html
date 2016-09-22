@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 6</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="site">
+		<header class="main_head">
+			<div>
+				<div class="contacts">
+					<p><img src="img/phone.png" alt="Телефонная трубка" width="22" height="21"></p>
+					<p>(044)123-45-67</p>
+					<p>(044)567-89-10</p>
+				</div>
+				<div class="login">
+					<p><img src="img/ava.png" alt="Аватар" width="14" height="18"></p>
+					<form action="#" method="post" name="login">
+						<input class="input_1" type="text" id="name" placeholder="логин" required>
+						<input class="input_1" type="password" id="password" placeholder="пароль" required>
+						<button class="submit" type="submit">вход</button>
+					</form>
+					<p>|</p>
+					<p><a href="#">регистрация</a></p>
+					<p><a href="#">забыли пароль?</a></p>
+				</div>
+				<div class="interaction">
+					<p>
+						<a href="#" title="Главная страница">
+							<img src="img/home.png" alt="Домой" width="12" height="11">
+						</a>
+					</p>
+					<p>
+						<a href="#" title="Карта сайта">
+							<img src="img/site_map.png" alt="Карта сайта" width="14" height="10">
+						</a>
+					</p>
+					<p>
+						<a href="#" title="Сообщения">
+							<img src="img/mail.png" alt="Сообщения" width="12" height="9">
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="banner">
+				<img src="img/banner.jpg" alt="ZAOR.com.ua drives you away" width="909" height="237">
+			</div>
+			<div class="footer clearfix">
+				<nav>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="busket">
+					<a href="#" title="Здесь отобразается Ваш заказ">
+						<ul>
+							<li><img src="img/basket.png" alt="Корзина" width="21" height="17"></li>
+							<li>товаров:</li>
+							<li><span>0</span></li>
+							<li>на сумму:</li>
+							<li><span>0,00 грн.</span></li>
+						</ul>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!--
+		<div class="search">
+			<div class="car">
+				<header>
+					<h4>Диски:<h4>
+					<h3>Поиск по автомобилю</h3>
+					<h4>Шины:</h4>
+				</header>
+				<form>
+					<div>
+						<ul>
+							<li>Марка <span>авто:</span></li>
+							<li>Модель <span>автомобиля:</span></li>
+							<li>Год выпуска <span>автомобиля:</span></li>
+							<li>Комплектация</li>
+						</ul>
+						<ul>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>Марка <span>авто:</span></li>
+							<li>Модель <span>автомобиля:</span></li>
+							<li>Год выпуска <span>автомобиля:</span></li>
+							<li>Комплектация</li>
+						</ul>
+						<ul>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+						</ul>
+					</div>
+					<input type="submit">
+				</form>
+			</div>
+			<div class="tire">
+				<header>
+					<h3>поиск шин</h3>
+				</header>
+				<form>
+					<ul>
+						<li>
+							<span>Размер:</span>
+							<select>
+									<option value="145">145</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+							<select>
+							<span>/</span>
+							<select>
+									<option value="0"></option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+							<select>
+						</li>
+						<li>
+							<span>R</span>
+							<select>
+									<option value="12">12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+							<select>
+						</li>
+						<li>
+							<span>Сезон:</span>
+							<ul>
+								<li><input type="checkbox">лето</li>
+								<li><input type="checkbox">зима</li>
+								<li><input type="checkbox">всесез</li>
+							</ul>
+						</li>
+					</ul>
+					<input type="submit">
+				</form>
+			</div>
+			<div class="wheel">
+				<form>
+					<div>
+						<header>
+							<h3>поиск дисков</h3>
+						</header>
+						<ul>
+							<li>Диаметр <span>диска:</span></li>
+							<li>Количество <span>крепежных отверстий:</span></li>
+							<li>Диаметр <span>расположения крепежных отверстий:</span></li>
+						</ul>
+						<ul>
+							<li>
+								<select>
+									<option value="14">14</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="3">3</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>
+								<select>
+									<option value="12">12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>ДЦО <span>(диаметр центрального отверстия):</span></li>
+							<li>
+								<select>
+									<option value="12">12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+							<li>ЕТ <span>(вылет диска):</span></li>
+							<li>
+								<select>
+									<option value="12">12</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								<select>
+							</li>
+						</ul>
+					</div>
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+		-->
+		<div class="basis clearfix">
+			<div class="production">
+				<div class="H2">
+					<img src="img/list.png" alt="Список" width="22" height="21">
+					<h2>КАТАЛОГ ПРОДУКЦИИ:</h2>
+				</div>
+				<div>
+					<div class="H3">
+						<img src="img/ring.png" alt="IMG" width="22" height="22">
+						<h3>ШИНЫ</h3>
+					</div>
+					<ul>
+						<li><a href="">Наименование 1</a></li>
+						<li><a href="">Наименование 2</a></li>
+						<li><a href="">Наименование 3</a></li>
+						<li><a href="">Наименование 4</a></li>
+					</ul>
+					<div class="H3">
+						<img src="img/ring.png" alt="IMG" width="22" height="22">
+						<h3>ДИСКИ</h3>
+					</div>
+					<ul>
+						<li><a href="">Наименование 1</a></li>
+						<li><a href="">Наименование 2</a></li>
+						<li><a href="">Наименование 3</a></li>
+						<li><a href="">Наименование 4</a></li>
+					</ul>
+					<div class="H3">
+						<img src="img/ring.png" alt="IMG" width="22" height="22">
+						<h3>БОЛТЫ</h3>
+					</div>
+					<ul>
+						<li><a href="">Наименование 1</a></li>
+						<li><a href="">Наименование 2</a></li>
+						<li><a href="">Наименование 3</a></li>
+						<li><a href="">Наименование 4</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="brands">
+				<div class="H2">
+					<img src="img/list.png" alt="Список" width="22" height="21">
+					<h2>БРЕНДЫ:</h2>
+				</div>
+				<div>
+					<form>
+						<div class="H3">
+							<img src="img/ring.png" alt="IMG" width="22" height="22">
+							<h3>ШИНЫ</h3>
+						</div>
+						<ul>
+							<li><input class="input_2" type="checkbox">Бренд 1</li>
+							<li><input class="input_2" type="checkbox">Бренд 2</li>
+							<li><input class="input_2" type="checkbox">Бренд 3</li>
+						</ul>
+						<div class="H3">
+							<img src="img/ring.png" alt="IMG" width="22" height="22">
+							<h3>ДИСКИ</h3>
+						</div>
+						<ul>
+							<li><input class="input_2" type="checkbox">Бренд 1</li>
+							<li><input class="input_2" type="checkbox">Бренд 2</li>
+							<li><input class="input_2" type="checkbox">Бренд 3</li>
+						</ul>
+						<button class="submit_2" type="submit">ВЫБРАТЬ</button>
+					</form>
+				</div>
+			</div>
+			<div class="content clearfix">
+				<div class="item">
+					<a href="#">
+						<h4>Goodyear</h4>
+						<p class="tire_type">Ultra Grip Extreme</p>
+						<div class="tire_img">
+							<img src="img/wheel_1.jpg" alt="Фото покрышки" width="74" height="118">
+						</div>
+						<p class="coast">90.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Nokian</h4>
+						<p class="tire_type">Hakkapelitta R</p>
+						<div class="tire_img">
+							<img src="img/wheel_2.jpg" alt="Фото покрышки" width="69" height="118">
+						</div>
+						<p class="coast">115.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Hankook</h4>
+						<p class="tire_type">K 708 155/65 R14</p>
+						<div class="tire_img">
+							<img src="img/wheel_3.jpg" alt="Фото покрышки" width="79" height="118">
+						</div>
+						<p class="coast">393.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Goodyear</h4>
+						<p class="tire_type">Ultra Grip Extreme</p>
+						<div class="tire_img">
+							<img src="img/wheel_1.jpg" alt="Фото покрышки" width="74" height="118">
+						</div>
+						<p class="coast">90.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Nokian</h4>
+						<p class="tire_type">Hakkapelitta R</p>
+						<div class="tire_img">
+							<img src="img/wheel_2.jpg" alt="Фото покрышки" width="69" height="118">
+						</div>
+						<p class="coast">115.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Hankook</h4>
+						<p class="tire_type">K 708 155/65 R14</p>
+						<div class="tire_img">
+							<img src="img/wheel_3.jpg" alt="Фото покрышки" width="79" height="118">
+						</div>
+						<p class="coast">393.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Goodyear</h4>
+						<p class="tire_type">Ultra Grip Extreme</p>
+						<div class="tire_img">
+							<img src="img/wheel_1.jpg" alt="Фото покрышки" width="74" height="118">
+						</div>
+						<p class="coast">90.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Nokian</h4>
+						<p class="tire_type">Hakkapelitta R</p>
+						<div class="tire_img">
+							<img src="img/wheel_2.jpg" alt="Фото покрышки" width="69" height="118">
+						</div>
+						<p class="coast">115.00 грн.</p>
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<h4>Hankook</h4>
+						<p class="tire_type">K 708 155/65 R14</p>
+						<div class="tire_img">
+							<img src="img/wheel_3.jpg" alt="Фото покрышки" width="79" height="118">
+						</div>
+						<p class="coast">393.00 грн.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="tire_brands clearfix">
+				<ul>
+					<li>
+						<a href="#" title="Перейти к производителю Toyo Tires">
+							<img src="img/tire_toyo.png" alt="TOYO TIRES" width="83" height="21">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю Bridgestone">
+							<img src="img/tire_bridgestone.png" alt="Bridgestone" width="97" height="14">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю Continental Tire">
+							<img src="img/tire_continental.png" alt="Continental TIRE" width="77" height="21">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю Cooper Tires">
+							<img src="img/tire_cooper.png" alt="Cooper TYRES" width="59" height="21">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю AVON Tyres">
+							<img src="img/tire_avon.png" alt="AVON TYRES" width="77" height="13">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю Tire Factory">
+							<img src="img/tire_factory.png" alt="Tire FACTORY" width="57" height="27">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю Pirelli">
+							<img src="img/tire_pirelli.png" alt="Pirelli" width="61" height="14">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Перейти к производителю DUNLOP">
+							<img src="img/tire_dunlop.png" alt="DUNLOP" width="72" height="13">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="foot_info">
+				<ul class="clearfix">
+					<li><a href="#">О компании</a></li>
+					<li>|</li>
+					<li><a href="#">Доставка</a></li>
+					<li>|</li>
+					<li><a href="#">Статьи</a></li>
+					<li>|</li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p>Создание сайта &copy; Global Vision</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

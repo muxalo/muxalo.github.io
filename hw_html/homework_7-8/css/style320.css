@@ -1,0 +1,279 @@
+.limit {
+	width: 320px;
+	margin: 0 auto;
+}
+
+	/*	HEADER	*/
+
+.b-header {
+	min-height: 516px;
+}
+
+.header {
+	position: relative;
+	min-width: 320px;
+}
+
+.header-logo {
+	margin: 0 auto;
+	width: 320px;
+	text-align: center;
+}
+
+	/*	HEADER__NAVIGATION	*/
+
+.nav__item {
+	display: none;
+}
+
+.nav__item:first-child {
+	display: block;
+	background: none;
+}
+
+.header-nav {
+	position: absolute;
+	left: 50%;
+	margin-top: 18px;
+	margin-left: -123px;
+	width: 246px;
+	border-radius: 8px;
+	border: 1px solid rgba(0,0,0,0);
+	z-index: 10;
+}
+
+.header-nav:hover {
+	border: 1px solid #121c23;
+}
+
+.header-nav:hover .nav__item:first-child {
+	background: rgba(54,41,62,0.9);
+}
+
+.header-nav:hover .nav__item:hover {
+	background: rgba(36,28,42,0.9);
+}
+
+.header-nav:hover .nav__item {
+	display: block;
+	height: 41px;
+	box-sizing: border-box;
+	border-top: 1px solid #503d57;
+	border-bottom: 1px solid #35273d;
+}
+
+.nav__item {
+	background: rgba(54,41,62,0.9);
+	text-align: center;
+}
+
+.nav__item:first-child {
+	border-radius: 7px 7px 0 0;
+}
+
+.nav__item:last-child {
+	border-radius: 0 0 7px 7px;
+}
+
+.nav__item:hover {
+	background: rgba(36,28,42,0.9);
+}
+
+.nav__link {
+	display: block;
+	line-height: 36px;
+}
+
+	/*	HEADER__SLIDER	*/
+
+.slider1 {
+	margin: 172px auto 0;
+	width: 320px;
+}
+
+.slider1-content {
+	width: 260px;
+	max-height: 66px;
+	margin: 0 auto;
+	text-shadow: 0 3px 3px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.slider1-content-link {
+	text-decoration: none;
+	display: block;
+	padding: 0 32px;
+	width: 210px;
+}
+
+.slider1__img {
+	display: none;
+}
+
+.slider1__arrow {
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	background: url("../img/sprite.png") no-repeat;
+	cursor: pointer;
+	z-index: 15;
+}
+
+.slider1__arrow--left {
+	top: 14px;
+	left: -37px;
+	background-position: -195px -15px;
+}
+
+.slider1__arrow--right {
+	top: 14px;
+	right: -33px;
+	background-position: -240px -15px;
+}
+
+.slider1__caption {
+	color: #ffffff;
+	font: 36px "League Gothic", sans-serif;
+	text-transform: capitalize;
+}
+
+.slider1__tagline {
+  color: #edbfff;
+  font: 18px "League Gothic", sans-serif;
+  text-transform: uppercase;
+	margin-top: -3px;
+	overflow: hidden;
+	height: 24px;
+}
+
+.slider1__text {
+	display: none;
+}
+
+.slider1-radio {
+	left: 50%;
+	margin-top: 75px;
+	margin-left: -40px;
+}
+
+	/*	ABOUT	*/
+
+.about {
+	padding: 50px 0 63px;
+}
+
+.about__img {
+	margin-left: 30px;
+}
+
+.about__header {
+  margin-left: 82px;
+  margin-top: 18px;
+}
+
+.about__text {
+	margin: 2px 40px 0 81px;
+  max-height: 70px;
+	line-height: 24px;
+	overflow: hidden;
+}
+
+.about__link {
+	margin-top: 16px;
+	margin-right: 32px;
+	font: 17px "League Gothic", sans-serif;
+}
+
+	/*	UPDATES__SLIDER	*/
+
+.updates-slider {
+	margin: 70px 20px 0 44px;
+	padding: 22px 34px 34px;
+	background: #ffffff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	max-height: 215px;
+	min-height: 215px;
+}
+
+.slider2-radio {
+	left: 50%;
+	margin-top: 53px;
+	margin-left: -34px;
+}
+
+.updates-slider__header {
+  font: 24px "League Gothic", sans-serif;
+}
+
+.updates-slider__header--pink {
+	display: block;
+	margin-top: -5px;
+}
+
+.updates-slider__text {
+	margin-top: 4px;
+  font: 16px "OpenSans", sans-serif;
+	height: 165px;
+	line-height: 24px;
+	overflow: hidden;
+}
+
+	/*	UPDATES__LAST NEWS	*/
+
+.updates-last {
+	margin: 86px 18px 0;
+}
+
+.updates-last__header {
+	margin-top: 14px;
+	margin-left: 65px;
+	max-height: 22px;
+	overflow: hidden;
+}
+
+.updates-last__text {
+	max-height: 22px;
+	overflow: hidden;
+	margin-left: 65px;
+}
+
+.updates-last__main-link-1 {
+	margin: 21px 10px 87px 0;
+}
+
+.updates-last__main-link-2 {
+	display: none;
+}
+
+	/*	PARTNERS	*/
+
+.partner {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.partner__item {
+	margin-bottom: 60px;
+	width: 50%;
+}
+
+	/*	INFORMATION	*/
+
+.b-info {
+	display: none;
+}
+
+	/*	FOOTER	*/
+
+.footer {
+	min-height: 160px;
+	padding-top: 40px;
+}
+
+.footer__nav {
+	display: none;
+}
+
+.footer__disign {
+	text-align: center;
+}

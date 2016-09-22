@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80mm" height="50mm" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8000 5000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str4 {stroke:white;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.200000}
+    .str5 {stroke:white;stroke-width:100;stroke-linejoin:round;stroke-opacity:0.501961}
+    .str3 {stroke:#46324F;stroke-width:200}
+    .str2 {stroke:#CCCCCC;stroke-width:400}
+    .str0 {stroke:#484848;stroke-width:20}
+    .str1 {stroke:#C5C5C5;stroke-width:10}
+    .str6 {stroke:white;stroke-width:50;stroke-linejoin:round}
+    .str8 {stroke:#FEFEFE;stroke-width:20;stroke-linejoin:round}
+    .str7 {stroke:white;stroke-width:20;stroke-linejoin:round}
+    .fil3 {fill:none}
+    .fil6 {fill:none}
+    .fil8 {fill:none}
+    .fil5 {fill:white}
+    .fil7 {fill:#8F49AE;fill-opacity:0.501961}
+    .fil4 {fill:#8F49AE}
+    .fil10 {fill:url(#id5)}
+    .fil9 {fill:url(#id6)}
+    .fil2 {fill:url(#id7)}
+    .fil0 {fill:url(#id8)}
+    .fil1 {fill:url(#id9)}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M158 358l1284 0 0 1282 -1284 0 0 -1282z"/>
+    </clipPath>
+    <clipPath id="id1">
+     <path d="M3484 375l1431 0 -4 1269 -1431 0 4 -1269z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M1951 406l1098 0 3 1184 -1098 0 -3 -1184z"/>
+    </clipPath>
+    <clipPath id="id3">
+     <path d="M5258 240l1083 0 6 1520 -1082 0 -7 -1520z"/>
+    </clipPath>
+    <clipPath id="id4">
+     <path d="M6659 240l1082 0 -4 1524 -1082 0 4 -1524z"/>
+    </clipPath>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" x1="7200" y1="1625" x2="7200" y2="375">
+   <stop offset="0" style="stop-opacity:1; stop-color:#D6D6D6"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:white"/>
+  </linearGradient>
+  <linearGradient id="id6" gradientUnits="userSpaceOnUse" xlink:href="#id5" x1="5800" y1="1625" x2="5800" y2="375">
+  </linearGradient>
+  <linearGradient id="id7" gradientUnits="userSpaceOnUse" x1="800" y1="4250" x2="800.04" y2="3750">
+   <stop offset="0" style="stop-opacity:1; stop-color:#DEDEDE"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:white"/>
+  </linearGradient>
+  <linearGradient id="id8" gradientUnits="userSpaceOnUse" x1="800" y1="3250" x2="800.04" y2="2750">
+   <stop offset="0" style="stop-opacity:1; stop-color:black"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#888888"/>
+  </linearGradient>
+  <radialGradient id="id9" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 -0 -0 0.892578 0 430)" cx="800" cy="4000" r="357.19" fx="800" fy="4000">
+   <stop offset="0" style="stop-opacity:1; stop-color:#FEFEFE"/>
+   <stop offset="0.14902" style="stop-opacity:0.498039; stop-color:#BEBEBE"/>
+   <stop offset="0.635294" style="stop-opacity:1; stop-color:#7F7F7F"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:black"/>
+  </radialGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0 str0" cx="800" cy="3000" r="250"/>
+  <g id="_1116050832">
+   <circle class="fil1" cx="800" cy="4000" r="350"/>
+   <circle class="fil2 str1" cx="800" cy="4000" r="250"/>
+  </g>
+  <g id="_1119322816">
+   <circle class="fil3 str2" cx="3000" cy="3300" r="1150"/>
+   <circle class="fil3 str3" cx="3000" cy="3300" r="1150"/>
+   <path class="fil4" d="M3000 2450c469,0 850,381 850,850 0,469 -381,850 -850,850 -469,0 -850,-381 -850,-850 0,-469 381,-850 850,-850z"/>
+   <g>
+    <polygon class="fil5" points="3431,3294 3081,3494 2731,3694 2731,3294 2731,2894 3081,3094 "/>
+    <polygon id="1" class="fil6 str4" points="3431,3294 3081,3494 2731,3694 2731,3294 2731,2894 3081,3094 "/>
+   </g>
+  </g>
+  <g>
+   <circle class="fil3 str2" cx="6300" cy="3300" r="1150"/>
+   <circle class="fil3 str3" cx="6300" cy="3300" r="1150"/>
+   <path class="fil7" d="M6300 2450c469,0 850,381 850,850 0,469 -381,850 -850,850 -469,0 -850,-381 -850,-850 0,-469 381,-850 850,-850z"/>
+   <g>
+    <polygon class="fil5" points="6731,3294 6381,3494 6031,3694 6031,3294 6031,2894 6381,3094 "/>
+    <polygon id="1" class="fil8 str5" points="6731,3294 6381,3494 6031,3694 6031,3294 6031,2894 6381,3094 "/>
+   </g>
+  </g>
+  <g>
+   <g style="clip-path:url(#id0)">
+    <image x="158" y="358" width="1284" height="1282" xlink:href="sprite_Images\sprite_ImgID1.png"/>
+   </g>
+  </g>
+  <polygon class="fil5 str6" points="544,681 394,531 581,531 706,656 706,781 1019,1094 1144,1094 1269,1219 1269,1406 1119,1256 1056,1256 1056,1319 1206,1469 1019,1469 894,1344 894,1219 581,906 456,906 331,781 331,594 481,744 544,744 "/>
+  <g>
+   <g style="clip-path:url(#id1)">
+    <image x="3480" y="375" width="1435" height="1270" xlink:href="sprite_Images\sprite_ImgID2.png"/>
+   </g>
+  </g>
+  <path class="fil5 str7" d="M4504 1221c249,-107 330,-325 186,-498 -145,-172 -465,-240 -733,-155 -267,85 -390,294 -279,478 110,183 414,278 696,217l137 206 -7 -248z"/>
+  <g>
+   <g style="clip-path:url(#id2)">
+    <image x="1951" y="406" width="1101" height="1184" xlink:href="sprite_Images\sprite_ImgID3.png"/>
+   </g>
+  </g>
+  <path class="fil5 str8" d="M2791 1312c65,-30 113,-87 120,-144l1 0 0 -625 -625 125 0 510c-65,4 -134,42 -172,98 -37,55 -37,115 2,151 39,36 108,40 174,10 65,-30 113,-87 120,-144l1 0 0 -438 375 -75 0 273c-65,4 -134,42 -172,98 -37,55 -37,115 2,151 39,36 108,40 174,10z"/>
+  <g>
+   <g style="clip-path:url(#id3)">
+    <image x="5258" y="240" width="1089" height="1520" xlink:href="sprite_Images\sprite_ImgID4.png"/>
+   </g>
+  </g>
+  <polygon class="fil9 str8" points="6206,1438 5769,1000 6206,563 6019,375 5394,1000 6019,1625 "/>
+  <g>
+   <g style="clip-path:url(#id4)">
+    <image x="6655" y="240" width="1087" height="1525" xlink:href="sprite_Images\sprite_ImgID5.png"/>
+   </g>
+  </g>
+  <polygon class="fil10 str8" points="6981,1625 7606,1000 6981,375 6794,563 7231,1000 6794,1438 "/>
+ </g>
+</svg>

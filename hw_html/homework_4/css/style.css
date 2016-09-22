@@ -1,0 +1,218 @@
+body {
+	background: #0c739f;
+	font: 14px Tahoma, sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+	display: block;
+  clear: both;
+}
+
+	/* HEADER */
+
+.header {
+	height: 175px;
+	background: #5ef0ff;
+	background: linear-gradient(to bottom,  #128aa7 0%,#128aa7 16%,#5ef0ff 16%,#11cde1 17%,#11cde1 17%,#29d2e4 29%,#48d8e8 40%,#baf0f7 72%,#e2f9fb 86%,#f6fdfe 94%,#ffffff 100%);
+}
+
+header {
+	width: 944px;
+	height: 175px;
+	background: #ffffff;
+	margin: 0 auto;
+	padding: 10px 28px 0;
+	box-shadow: 0 0 10px #000000;
+}
+
+.logo {
+	width: 283px;
+	height: 164px;
+	background: url(../img/logo.jpg);
+	float: left;
+}
+
+.logo h1 {
+	margin-top: 100px;
+	color: #128aa7;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.contacts {
+	float: right;
+	line-height: 18px;
+}
+
+.contacts h2 {
+	color: #128aa7;
+	font-size: 12px;
+}
+
+.contacts p {
+	color: #128aa7;
+	font-size: 12px;
+}
+
+.countries {
+	clear: right;
+	float: right;
+	margin-top: 30px;
+}
+
+.countries li {
+	float: left;
+	margin-left: 10px;
+}
+
+.countries a {
+	color: #128aa7;
+	font-size: 10px;
+	text-align: center;
+	line-height: 16px;
+}
+
+.countries img {
+	display: block;
+	margin: 0 auto;
+}
+
+	/* CONTENT */
+
+.fon{
+	background: linear-gradient(to bottom, #41c6d3 0%,#39becd 4%,#1c9fb9 12%,#1191b1 17%,#0f8cad 37%,#0c739f 100%);
+}
+
+.content{
+	box-sizing: border-box;
+	width: 1000px;
+	min-height: 800px;
+	margin: 0 auto;
+	background: #ffffff;
+	box-shadow: 0 5px 10px #000000;
+}
+
+.advertising {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+.advertising img{
+	display: block;
+}
+
+.sidebar {
+	height: 28px;
+	padding: 0 20px;
+	background: #303030;
+	background: linear-gradient(to bottom, #373737 0%,#303030 100%);
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #000000;
+	box-shadow: 0 0 10px #000000;
+	z-index: 10;
+}
+
+.sidebar > li {
+	position: relative;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.sidebar a {
+	display: block;
+	color: #ffffff;
+	line-height: 28px;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.sidebar .travel, .sidebar .service, .sidebar .partner {
+	position: absolute;
+	width: 150px;
+	background: #303030;
+	left: -10px;
+	display: none;
+}
+
+.travel, .service, .partner{
+	box-shadow: 0 0 10px black;
+}
+
+.travel a, .service a, .partner a {
+	line-height: 20px;
+	text-align: left;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.sidebar > li:hover .travel {
+    display: block;
+}
+
+.sidebar > li:hover .service {
+    display: block;
+}
+
+.sidebar > li:hover .partner {
+    display: block;
+}
+
+.info, .news {
+	min-height: 545px;
+	width: 210px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: #edeef0;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+	z-index: 5;
+}
+
+.info {
+	float: left;
+}
+
+.news {
+	float: right;
+}
+
+.info h2, .news h2 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.info a, .news a {
+	color: #424c43;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.article {
+	box-sizing: border-box;
+	width: 580px;
+	padding: 14px;
+	float: left;
+}
+
+	/* FOOTER */
+
+.footer{
+	clear: both;
+	height: 30px;
+	margin-top: 4px;
+	background: #0c739f;
+}
+
+footer {
+	width: 100opx;
+}
+
+footer p {
+	color: #ffffff;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+}
