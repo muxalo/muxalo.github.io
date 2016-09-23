@@ -106,6 +106,7 @@ body {
 .homeworks__link_disable {
 	color: rgba(128, 128, 128, 0.5);
 	pointer-events: none;
+	cursor: default;
 }
 
 .homeworks__link:hover {
