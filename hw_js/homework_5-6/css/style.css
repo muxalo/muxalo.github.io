@@ -1,0 +1,26 @@
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+
+.btn {
+	width: 125px;
+	max-width: 48%;
+	min-width: 125px;
+}
+
+.display {
+	width: 255px;
+	max-width: 100%;
+	min-width: 255px;
+	height: 80px;
+	border: 2px solid orange;
+	border-radius: 5px;
+	background: #339933;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.display .timer {
+	font-family: 'Inconsolata', monospace;
+	font-weight: 700;
+	text-align: center;
+	font-size: 40px;
+}
