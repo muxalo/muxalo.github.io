@@ -29,7 +29,7 @@ body {
 .photo {
 	width: 30%;
 	float: left;
-	
+
 	background-size: cover;
 	margin: 20px 0;
 }
@@ -203,4 +203,27 @@ body {
 
 .preview__link_6:hover {
 	background-position: -420px -480px;
+}
+
+.preview__link_js {
+	display: block;
+	width: 200px;
+	height: 150px;
+	border: 3px solid rgba(128, 128, 128, 1);
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: url(../img/js_5-6.jpg) no-repeat;
+}
+
+.preview__link_js:hover {
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px #fff;
+}
+
+.preview__link_7 {
+	background-position: 0 0;
+}
+
+.preview__link_7:hover {
+	background-position: 0 -162px;
 }
