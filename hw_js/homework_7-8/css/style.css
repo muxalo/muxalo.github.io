@@ -1,0 +1,141 @@
+.clearfix:after {
+  content: "";
+	display: block;
+  clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+.wrapper {
+	min-width: 720px;
+	max-width: 80%;
+	height: 100vh;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-right: 3px solid rgb(69,157,173);
+  border-bottom-left-radius: 30em 10em;
+	box-shadow: 0 0 10px rgba(69,157,173,1);
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px;
+	background: linear-gradient(to bottom, rgba(69,157,173,1) 0%,rgba(107,176,213,0.7) 20%,rgba(125,185,232,0) 100%);
+	font-family: sans-serif;
+}
+
+.tabs__item {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 10px 20px;
+	border-radius: 5px 5px 0 0;
+	background: white;
+	border: 1px solid rgb(69,157,173);
+	position: relative;
+	z-index: 5;
+}
+
+.active {
+	background: linear-gradient(to bottom, rgb(0,255,0) 0%,rgb(124,255,124) 100%);
+	border-bottom: none;
+	z-index: 15;
+}
+
+.tabs__link {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+
+.tabs__content {
+	background: linear-gradient(to bottom, rgb(124,255,124) 0%,rgb(255,255,255) 10%);
+	padding: 20px;
+	border: 1px solid rgb(69,157,173);
+	margin-top: -2px;
+	border-radius: 0 5px 5px 5px;
+	height: 30vh;
+	position: relative;
+	z-index: 10;
+}
+
+.tabs__paragraph {
+	margin: 10px 0;
+}
+
+.fieldset {
+	border-top: 2px solid rgb(69,157,173);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: rgb(0,120,120);
+	margin: 50px 0 30px 0;
+	padding: 30px 0;
+}
+
+.fieldset legend {
+	padding: 0 20px;
+}
+
+.fieldset__item {
+	position: relative;
+}
+
+.fieldset__input {
+	width: 300px;
+	height: 15px;
+	padding: 15px 20px;
+	margin: 10px;
+	background: #fff;
+	border: 1px solid rgb(69,157,173);
+	border-bottom: 2px solid rgb(69,157,173);
+	border-radius: 5px;
+	color: #000;
+	font: 14px Tahoma;
+}
+
+.fieldset__input:focus {
+	box-shadow: 0 0 10px rgb(69,157,173);
+}
+
+.fieldset__help {
+	position: absolute;
+	background: linear-gradient(to bottom, rgb(255,255,100) 0%,rgb(255,255,255) 80%);
+	border: 2px solid rgb(200,200,0);
+	border-radius: 5px;
+	font-size: 14px;
+	color: black;
+	text-transform: none;
+	width: 150px;
+	height: 30px;
+	padding: 10px;
+	top: 10%;
+	left: 50%;
+	margin-left: 180px;
+	z-index: 20;
+	text-align: center;
+}
+
+.button {
+	width: 140px;
+	height: 30px;
+	margin: 20px;
+	border: 1px solid rgb(0,120,120);
+	border-radius: 5px;
+	background: linear-gradient(to top, rgba(107,176,213,0.7) 0%,rgba(125,185,232,0) 100%);
+	color: rgb(0,120,120);
+	font-weight: bold;
+}
+
+.button:hover {
+	box-shadow: 0 0 10px rgb(69,157,173);
+	text-shadow: 0 0 5px white;
+}
+
+.button:active {
+	background: linear-gradient(to bottom, rgba(107,176,213,0.7) 0%,rgba(125,185,232,0) 100%);
+}
+
+.button_active {
+	background: linear-gradient(to bottom, rgba(107,176,213,0.7) 0%,rgba(125,185,232,0) 100%);
+	text-shadow: 0 0 5px white;
+}

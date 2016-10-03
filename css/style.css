@@ -212,7 +212,6 @@ body {
 	border: 3px solid rgba(128, 128, 128, 1);
 	box-sizing: border-box;
 	border-radius: 10px;
-	background: url(../img/js_5-6.jpg) no-repeat;
 }
 
 .preview__link_js:hover {
@@ -221,9 +220,19 @@ body {
 }
 
 .preview__link_7 {
+	background: url(../img/js_5-6.jpg) no-repeat;
 	background-position: 0 0;
 }
 
 .preview__link_7:hover {
 	background-position: 0 -162px;
+}
+
+.preview__link_8 {
+	background: url(../img/js_7-8.jpg) no-repeat;
+	background-position: 0 0;
+}
+
+.preview__link_8:hover {
+	background-position: 0 -160px;
 }

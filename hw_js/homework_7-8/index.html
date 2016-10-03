@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Homework 7-8</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="tabs">
+		  <ul class="tabs clearfix">
+		    <li class="tabs__item tabs__item_1 active" id="li1"><a href="#tabs-1" class="tabs__link">Nunc tincidunt</a></li>
+		    <li class="tabs__item tabs__item_2" id="li2"><a href="#tabs-2" class="tabs__link">Proin dolor</a></li>
+		    <li class="tabs__item tabs__item_3" id="li3"><a href="#tabs-3" class="tabs__link">Aenean lacinia</a></li>
+		  </ul>
+		  <div id="b1" class="tabs__content">
+		    <p class="tabs__paragraph">Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+		  </div>
+		  <div id="b2" class="tabs__content hide">
+		    <p class="tabs__paragraph">Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+		  </div>
+		  <div id="b3" class="tabs__content hide">
+		    <p class="tabs__paragraph">Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+		    <p class="tabs__paragraph">Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+		  </div>
+		</div>
+		<div class="form">
+			<form method="post">
+				<fieldset class="fieldset">
+					<legend>Contact Us</legend>
+					<p class="fieldset__item">
+						<input class="fieldset__input" type="text" name="firstname" placeholder="Firstname" id="input_1">
+						<span class="fieldset__help fieldset__help_1 hide" id="help_1">Please provide your firstname.</span>
+					</p>
+					<p class="fieldset__item">
+						<input class="fieldset__input" type="text" name="lastname" placeholder="Lastname" id="input_2">
+						<span class="fieldset__help fieldset__help_2 hide" id="help_2">Please provide also your lastname.</span>
+					</p>
+					<p class="fieldset__item">
+						<input class="fieldset__input" type="text" name="adress" placeholder="Address" id="input_3">
+						<span class="fieldset__help fieldset__help_3 hide" id="help_3">Your home or work address.</span>
+					</p>
+					<button class="button" id="send" type="submit">Continue</button>
+					<button class="button" id="help">Show help</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
