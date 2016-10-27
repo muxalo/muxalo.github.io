@@ -41,7 +41,8 @@ have a fixed width and height (but it's not required).
 }
 
 .jcarousel img {
-
+  width: 980px;
+  height: auto;
 }
 
 .jcarousel-pagination {
