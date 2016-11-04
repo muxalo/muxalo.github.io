@@ -7,7 +7,6 @@
 .wrapper {
   width: 980px;
   margin: 0 auto;
-  height: 100vh;
   outline: 10px solid #b6e8e3;
 }
 
@@ -99,4 +98,88 @@
   width: 8px;
   height: 4px;
   transform: rotate(90deg);
+}
+
+  /* Select style */
+
+.boxForSelect {
+  border-top: 10px solid #b6e8e3;
+  padding: 20px 20px 50px 20px;
+}
+
+
+
+  /*  Checkboxes  */
+
+.checkbox-css, .checkbox-jq {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  border: 5px solid #b6e8e3;
+  border-top: 10px solid #b6e8e3;
+  padding: 20px 20px 50px 20px;
+}
+
+.checkbox-css {
+  border-left: none;
+}
+
+.checkbox-jq {
+  border-right: none;
+}
+
+h2 {
+  color: #605e5e;
+  font: 16px "Verdana", sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+
+  /*  Checkboxes on css   */
+
+.answer-css label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.answer-css label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  right: 10px;
+  top: 2px;
+  background-image: url("http://xiper.net/examples/html-and-css-tricks/forms/img/checkbox.png");
+  background-position: 0 0;
+}
+
+.answer-css input[type="checkbox"]:checked ~ label::before {
+  background-position: 0 -17px;
+}
+
+.answer-css input[type="checkbox"] {
+  display: none;
+}
+
+  /*  Checkboxes on jq   */
+
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url("http://xiper.net/examples/html-and-css-tricks/forms/img/checkbox.png");
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+
+.niceCheck input {
+  display: none;
+}
+
+.answer-js label {
+  margin-left: 20px;
 }

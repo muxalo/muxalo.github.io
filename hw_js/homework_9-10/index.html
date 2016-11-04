@@ -9,10 +9,13 @@
 	<link href="css/style.css" rel="stylesheet">
 
 	<link href="css/jcarousel.css" rel="stylesheet">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="js/jcarousel.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -71,7 +74,58 @@
               <!-- Pagination items will be generated in here -->
           </p>
       </div>
-
+			<div class="boxForSelect">
+				<h2>Стилизированный селект</h2>
+				<select name="mounth">
+          <option value="January">Январь</option>
+          <option value="March" checked>Март</option>
+					<option value="April">Апрель</option>
+          <option value="May">Май</option>
+          <option value="June">Июнь</option>
+          <option value="July">Июль</option>
+					<option value="August">Август</option>
+					<option value="September" checked>Сентябрь</option>
+					<option value="October">Октябрь</option>
+					<option value="November">Ноябрь</option>
+					<option value="December">Декабрь</option>
+        </select>
+			</div>
+			<div class="checkboxes clearfix">
+				<section class="checkbox-css">
+					<h2>Чекбоксы на css</h2>
+					<form action="" class="answer-css">
+						<div>
+							<input type="checkbox" id="answer_11">
+							<label for="answer_11">Ответ 1</label>
+						</div>
+						<div>
+							<input type="checkbox" id="answer_12">
+							<label for="answer_12">Ответ 2</label>
+						</div>
+						<div>
+							<input type="checkbox" id="answer_13">
+							<label for="answer_13">Ответ 3</label>
+						</div>
+					</form>
+				</section>
+				<section class="checkbox-jq">
+					<h2>Чекбоксы на jquery плагине</h2>
+					<form action="" class="answer-js">
+						<div>
+							<label for="ch1">Ответ 1</label>
+							<span class="niceCheck"><input type="checkbox" id="ch1"></span>
+						</div>
+						<div>
+							<label for="ch2">Ответ 2</label>
+							<span class="niceCheck"><input type="checkbox" id="ch2"></span>
+						</div>
+						<div>
+							<label for="ch3">Ответ 3</label>
+							<span class="niceCheck"><input type="checkbox" id="ch3"></span>
+						</div>
+					</form>
+				</section>
+			</div>
 		</main>
 	</div>
 </body>
