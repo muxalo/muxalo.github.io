@@ -1,0 +1,127 @@
+.clearfix:after {
+  content: "";
+	display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 80%;
+  min-width: 800px;
+  margin: 0 auto;
+  outline: 2px solid black;
+  padding-bottom: 20px;
+}
+
+	/* Slider Style */
+
+.carouselPlagin {
+	width: 100%;
+	min-width: 320px;
+}
+
+.carouselPlagin-prev, .carouselPlagin-next {
+	width: 15%;
+}
+
+.carouselPlagin-prev {
+	float: left;
+}
+
+.carouselPlagin-next {
+	float: right;
+}
+
+.carouselPlagin-prev span, .carouselPlagin-next span {
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 90px;
+	border: 1px solid red;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.carouselPlagin-slides {
+	width: 70%;
+	min-width: 120px;
+	overflow: hidden;
+	float: left;
+}
+
+.carouselPlagin-list {
+	list-style: none;
+	width: 1000000px;
+	margin-right: 10px;
+	position: relative;
+}
+
+.carouselPlagin-elem {
+	float: left;
+	margin: 20px 10px;
+}
+
+.carouselPlagin-elem img {
+	max-width: 200px;
+}
+
+.carouselPlagin-elem p {
+	text-align: center;
+	margin: 5px;
+}
+
+	/*	Templating style */
+	
+.profile h1 {
+	color: black;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.profile img {
+	width: 200px;
+	height: 200px;
+	border: 1px solid gray;
+	display: block;
+	margin: 20px auto;
+}
+
+.profile p {
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.profile hr {
+	margin: 20px 0;
+}
+
+.profile h2 {
+	color: black;
+	font-size: 17px;
+	margin: 20px;
+}
+
+.profile ul {
+	list-style: none;
+	padding-left: 35px;
+}
+
+.profile .list {
+	line-height: 1;
+	list-style: disc;
+	font-size: 17px;
+}
+
+.profile span {
+	font-size: 12px;
+}
+
+.profile a {
+	color: blue;
+	font-style: italic;
+	text-decoration: underline;
+}
