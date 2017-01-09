@@ -112,9 +112,7 @@ $(document).ready(function() {
 
 		$('.modal-title').html(header);
 		$('.modal-body').html('Ты правильно ответил на: ' + count + ' вопросов из ' + userAnswers.length);
-		/*
-		$('input').checked = false;
-		*/
+
 		arrayAnswer = $('input');
 
 		for ( i = 0; i < arrayAnswer.length; i++) {
