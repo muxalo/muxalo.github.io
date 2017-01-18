@@ -18,32 +18,26 @@ $(function() {
 
   var next = $('.country__arrow_next');
   var prev = $('.country__arrow_prev');
+  var counter = 1000;
 
-  next.click( function(e) {
-    var parent = $(this).parent();
-    var list = $(this).siblings('ul');
 
-    var coordinateY = list.css('left');
-
-    list.css('left', nextSlide(coordinateY));
+  $('.country__arrow_next').click(function(){
+    counter++;
+    var slider = $(this).siblings('ul').css('left', coordinate(counter));
   });
 
-  prev.click( function() {
-    var parent = $(this).parent();
-    var list = $(this).siblings('ul');
 
-    var coordinateY = list.css('left');
-
-    list.css('left', prevSlide(coordinateY));
+  $('.country__arrow_prev').click(function(){
+    counter--;
+    var slider = $(this).siblings('ul').css('left', coordinate(counter));
   });
 
-  function nextSlide(y) {
-    (parseInt(y) <= -900) ? y = '0px' : y = parseInt(y) - 300 + 'px';
-    return y;
-  }
-
-  function prevSlide(y) {
-    (parseInt(y) >= 0) ? y = '-900px' : y = parseInt(y) + 300 + 'px';
+  function coordinate(a) {
+    if (a >= 0 && a <= 3) {
+      var y = a * -300 + 'px';
+    } else {
+      var y = (a % 4) * -300 + 'px';
+    }
     return y;
   }
 
