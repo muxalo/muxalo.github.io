@@ -38,12 +38,12 @@ $(function() {
   });
 
   function nextSlide(y) {
-    (y == '-900px') ? y = '0px' : y = parseInt(y) - 300 + 'px';
+    (parseInt(y) <= -900) ? y = '0px' : y = parseInt(y) - 300 + 'px';
     return y;
   }
 
   function prevSlide(y) {
-    (y == '0px') ? y = '-900px' : y = parseInt(y) + 300 + 'px';
+    (parseInt(y) >= 0) ? y = '-900px' : y = parseInt(y) + 300 + 'px';
     return y;
   }
 
@@ -52,7 +52,7 @@ $(function() {
   $('a.play').click( function(e) {
     e.preventDefault();
 
-    $('body').append('<div class="video-wrap"><div class="video"><iframe src="' + $(this).attr('href') +'" frameborder="0" allowfullscreen></iframe><img src="image/svg/icon_close.svg" alt="Close" class="video-close"></div></div>');
+    $('body').append('<div class="video-wrap"><div class="video"><iframe rel="0" src="' + $(this).attr('href') +'" frameborder="0" allowfullscreen></iframe><img src="image/svg/icon_close.svg" alt="Close" class="video-close"></div></div>');
   })
 
   $("body").on("click", ".video-wrap", function () {
@@ -60,7 +60,21 @@ $(function() {
   });
 
   $("body").on("click", ".video-close", function () {
-    $(this).parent().remove();
+    $(this).parents('.video-wrap').remove();
   });
+
+  /* FILTER */
+
+  $('.mainNav__link').click(function(e){
+    e.preventDefault();
+    $('.mainNav__link:first').removeClass('mainNav__link_active');
+    $(this).addClass('mainNav__link_active');
+  })
+
+  $('.mainNav__link:first').click(function(e){
+    e.preventDefault();
+    $('.mainNav__link').removeClass('mainNav__link_active');
+    $(this).addClass('mainNav__link_active');
+  })
 
 });

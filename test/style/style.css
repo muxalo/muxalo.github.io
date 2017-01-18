@@ -19,10 +19,12 @@ p, span {
 .header {
   background: #282a2d;
   height: 80px;
+  transition: all 0.3s ease-in-out;
 }
 
 .header:hover {
   background: #22539d;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo {
@@ -75,7 +77,9 @@ p, span {
 
 .mainNav__item:hover .mainNav__link {
   color: #242526;
+  /*
   font-weight: bold;
+  */
 }
 
 .mainNav__link {
@@ -88,13 +92,16 @@ p, span {
 .mainNav__link_active {
   color: #242526;
   border-bottom: 2px solid #242526;
+  /*
   font-weight: bold;
+  */
 }
 
   /* countries */
 
 .countries {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -159,17 +166,6 @@ p, span {
   overflow: hidden;
 }
 
-.country__name_small {
-  margin: 0;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 24px;
-  color: #fff;
-  font-family: NewBaskervilleC, 'Times New Roman', serif;
-  cursor: pointer;
-}
-
 .country__icon {
   width: 42px;
   height: 42px;
@@ -185,10 +181,13 @@ p, span {
 
 .country__img {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
 .country__name {
+  font-weight: normal;
   font-family: NewBaskervilleC, 'Times New Roman', serif;
   font-size: 36px;
   color: #fff;
@@ -198,13 +197,15 @@ p, span {
 }
 
 .country__name_small {
-  font-family: NewBaskervilleC, 'Times New Roman', serif;
+  font-weight: normal;
+  margin: 0;
   position: absolute;
   bottom: 20px;
   left: 20px;
   font-size: 24px;
   color: #fff;
-  cursor: pointer;
+  font-family: NewBaskervilleC, 'Times New Roman', serif;
+  cursor: default;
 }
 
 .country__arrow {
@@ -223,7 +224,7 @@ p, span {
 }
 
 .country__arrow_prev {
-  right: 46px;
+  right: 60px;
 }
 
 .country__arrow_next {
@@ -233,14 +234,11 @@ p, span {
 .country_big {
   background-color: rgba(3, 21, 36, 0.5);
   overflow: hidden;
-  display: flex;
-  align-items: center;
   position: relative;
   transition: background-color 0.5s ease-in-out;
   margin: 0 20px 20px 0;
   width: 620px;
   height: 420px;
-  justify-content: flex-start;
   float: right;
 }
 
@@ -254,8 +252,9 @@ p, span {
 }
 
 .country__name_big {
+  font-weight: normal;
   font-size: 40px;
-  text-align: center;
+  margin: 80px 0 35px 30px;
   font-family: NewBaskervilleC, 'Times New Roman', serif;
   color: #fff;
   cursor: default;
@@ -269,7 +268,7 @@ p, span {
 }
 
 .country__list li {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .country__list h2 {
@@ -280,6 +279,7 @@ p, span {
   /* FOOTER */
 
 .footer {
+  margin-top: 60px;
   height: 60px;
   box-sizing: border-box;
   border-top: 1px solid #c7cacf;
