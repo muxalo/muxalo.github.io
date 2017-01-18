@@ -6,9 +6,7 @@
 		<title>adventure</title>
 		<link rel="stylesheet" href="style/normalize.css">
 		<link rel="stylesheet" href="style/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="script/jquery.lazyload.js"></script>
-		<script src="script/jquery.jcarousel.js"></script>
+		<link rel="stylesheet" href="style/jquery.fancybox.css" type="text/css" media="screen" />
 	</head>
 	<body>
     <header class="header">
@@ -34,7 +32,7 @@
           </ul>
         </nav>
         <ul class="countries">
-					<li class="country country_big">
+					<li class="country_big">
             <img data-original="image/content/latin-america.png" alt="Latin America" class="country__img lazy">
 						<div class="country__more">
 							<h2 class="country__name_big">Latin America</h2>
@@ -57,78 +55,144 @@
 	            </ol>
 						</div>
           </li>
-          <li class="country">
-            <img data-original="image/content/cuba.png" alt="Cuba" class="country__img lazy">
-            <h2 class="country__name">Cuba</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+          <li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/cuba.png" alt="Cuba" class="country__img lazy">
+								<h2 class="country__name">Cuba</h2>
+							</li>
+              <li class="country-slide country-slide__desc">
+								<p class="country__desc">Хэмингуэй, став весьма знаменитым, естественно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!</p>
+								<h3 class="country__name_small">Cuba</h3>
+							</li>
+              <li class="country-slide country-slide__img">
+								<img data-original="image/content/cuba_3.png" alt="Cuba" class="country__img lazy">
+								<a class="fancybox" rel="group" href="image/content/cuba_3_big.jpg">
+									<img src="image/svg/icon_zoom.svg" alt="Zoom" class="country__icon">
+								</a>
+								<h3 class="country__name_small">Cuba</h3>
+							</li>
+              <li class="country-slide country-slide__video">
+								<img data-original="image/content/cuba_4.png" alt="Cuba" class="country__img lazy">
+								<a class="play" href="https://www.youtube.com/embed/atIwagMBDi4">
+									<img src="image/svg/icon_play.svg" alt="Play" class="country__icon">
+								</a>
+								<h3 class="country__name_small">Cuba</h3>
+							</li>
+            </ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
           </li>
-          <li class="country">
-            <img data-original="image/content/russia.png" alt="Russia" class="country__img lazy">
-            <h2 class="country__name">Russia</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+					<li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/russia.png" alt="Cuba" class="country__img lazy">
+								<h2 class="country__name">Russia</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/england.png" alt="England" class="country__img lazy">
-            <h2 class="country__name">England</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+					</li>
+					<li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/england.png" alt="England" class="country__img lazy">
+								<h2 class="country__name">England</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/norway.png" alt="Norway" class="country__img lazy">
-            <h2 class="country__name">Norway</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+					</li>
+					<li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/norway.png" alt="Norway" class="country__img lazy">
+								<h2 class="country__name">Norway</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/switzerland.png" alt="Switzerland" class="country__img lazy">
-            <h2 class="country__name">Switzerland</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+					</li>
+					<li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/switzerland.png" alt="Switzerland" class="country__img lazy">
+								<h2 class="country__name">Switzerland</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/china.png" alt="China" class="country__img lazy">
-            <h2 class="country__name">China</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+					</li>
+					<li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/china.png" alt="China" class="country__img lazy">
+								<h2 class="country__name">China</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/germany.png" alt="Germany" class="country__img lazy">
-            <h2 class="country__name">Germany</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+					</li>
+					<li class="country-slider">
+            <ul>
+              <li class="country-slide country-slide__main">
+								<img data-original="image/content/germany.png" alt="Germany" class="country__img lazy">
+								<h2 class="country__name">Germany</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
             <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/japan.png" alt="Japan" class="country__img lazy">
-            <h2 class="country__name">Japan</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
-            <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/australia.png" alt="Australia" class="country__img lazy">
-            <h2 class="country__name">Australia</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
-            <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/india.png" alt="India" class="country__img lazy">
-            <h2 class="country__name">India</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
-            <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/finland.png" alt="Finland" class="country__img lazy">
-            <h2 class="country__name">Finland</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
-            <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
-          <li class="country">
-            <img data-original="image/content/new-zealand.png" alt="New Zealand" class="country__img lazy">
-            <h2 class="country__name">New Zealand</h2>
-            <img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
-            <img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
-          </li>
+					</li>
+					<li class="country-slider">
+						<ul>
+							<li class="country-slide country-slide__main">
+								<img data-original="image/content/japan.png" alt="Japan" class="country__img lazy">
+								<h2 class="country__name">Japan</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+						<img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
+					</li>
+					<li class="country-slider">
+						<ul>
+							<li class="country-slide country-slide__main">
+								<img data-original="image/content/australia.png" alt="Australia" class="country__img lazy">
+								<h2 class="country__name">Australia</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+						<img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
+					</li>
+					<li class="country-slider">
+						<ul>
+							<li class="country-slide country-slide__main">
+								<img data-original="image/content/india.png" alt="India" class="country__img lazy">
+								<h2 class="country__name">India</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+						<img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
+					</li>
+					<li class="country-slider">
+						<ul>
+							<li class="country-slide country-slide__main">
+								<img data-original="image/content/finland.png" alt="Finland" class="country__img lazy">
+								<h2 class="country__name">Finland</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+						<img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
+					</li>
+					<li class="country-slider">
+						<ul>
+							<li class="country-slide country-slide__main">
+								<img data-original="image/content/new-zealand.png" alt="New Zealand" class="country__img lazy">
+								<h2 class="country__name">New Zealand</h2>
+							</li>
+						</ul>
+						<img src="image/svg/prev_slide.svg" alt="Prev" class="country__arrow country__arrow_prev">
+						<img src="image/svg/next_slide.svg" alt="Next" class="country__arrow country__arrow_next">
+					</li>
         </ul>
       </div>
     </main>
@@ -141,6 +205,12 @@
         </div>
       </div>
     </footer>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="script/jquery.lazyload.js"></script>
+		<!-- fancybox -->
+		<script src="script/jquery.mousewheel.pack.js"></script>
+		<script src="script/jquery.fancybox.pack.js"></script>
 		<script src="script/script.js"></script>
 	</body>
 </html>
