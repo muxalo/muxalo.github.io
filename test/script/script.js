@@ -22,19 +22,21 @@ $(function() {
 
   $('.country__arrow_next').click(function(){
     counter++;
-    var slider = $(this).siblings('ul').css('left', coordinate(counter));
+    var slides = $(this).siblings('ul').children().length;
+    $(this).siblings('ul').css('left', coordinate(counter, slides));
   });
 
   $('.country__arrow_prev').click(function(){
     counter--;
-    var slider = $(this).siblings('ul').css('left', coordinate(counter));
+    var slides = $(this).siblings('ul').children().length;
+    var slider = $(this).siblings('ul').css('left', coordinate(counter, slides));
   });
 
-  function coordinate(a) {
+  function coordinate(a, m) {
     if (a >= 0 && a <= 3) {
       var y = a * -300 + 'px';
     } else {
-      var y = (a % 4) * -300 + 'px';
+      var y = (a % m) * -300 + 'px';
     }
     return y;
   }
