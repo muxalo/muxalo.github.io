@@ -20,12 +20,10 @@ $(function() {
   var prev = $('.country__arrow_prev');
   var counter = 1000;
 
-
   $('.country__arrow_next').click(function(){
     counter++;
     var slider = $(this).siblings('ul').css('left', coordinate(counter));
   });
-
 
   $('.country__arrow_prev').click(function(){
     counter--;
