@@ -15,7 +15,6 @@ $(document).ready(function() {
     /* SLIDER */
 
 $(function() {
-
   var next = $('.country__arrow_next');
   var prev = $('.country__arrow_prev');
   var counter = 1000;
