@@ -2,7 +2,8 @@
 
 $(function() {
   $("img.lazy").lazyload({
-     effect : "fadeIn"
+     effect : "fadeIn",
+     failure_limit : 1
    });
 });
 
@@ -60,10 +61,13 @@ $(function() {
 
   var fActive = '';
   function filterId(id) {
-    console.log(id);
     if (fActive != id) {
       $('.country-slider').fadeOut(200);
       $('.country-slider').filter('.' + id).delay(300).fadeIn(300);
+      $("img.lazy").lazyload({
+        container : $('.countries'),
+        failure_limit : 1
+       });
       fActive = id;
     }
   }
@@ -85,18 +89,22 @@ $(function() {
     $(this).addClass('mainNav__link_active');
     filterId('atmosphere');
   });
-  $('#poeople').click( function(e) {
+  $('#people').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     filterId('people');
   });
-  $('#all').click(function(e) {
+  $('#all').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     $('.country-slider').fadeIn(300);
-    fId = 'all';
+    if ($(window).width() <= 640) {
+      console.log('сработал');
+      $('.country_big').css('display', 'none');
+    }
+    fActive = 'all';
   });
 
 });
