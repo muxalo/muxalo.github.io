@@ -59,16 +59,45 @@ $(function() {
 
   /* FILTER */
 
-  $('.mainNav__link').click(function(e){
-    e.preventDefault();
-    $('.mainNav__link:first').removeClass('mainNav__link_active');
-    $(this).addClass('mainNav__link_active');
-  })
-
-  $('.mainNav__link:first').click(function(e){
+  var fActive = '';
+  function filterId(id) {
+    console.log(id);
+    if (fActive != id) {
+      $('.country-slider').fadeOut(200);
+      $('.country-slider').filter('.' + id).delay(300).fadeIn(300);
+      fActive = id;
+    }
+  }
+  $('#culture').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
-  })
+    filterId('culture');
+  });
+  $('#extreme').click( function(e) {
+    e.preventDefault();
+    $('.mainNav__link').removeClass('mainNav__link_active');
+    $(this).addClass('mainNav__link_active');
+    filterId('extreme');
+  });
+  $('#atmosphere').click( function(e) {
+    e.preventDefault();
+    $('.mainNav__link').removeClass('mainNav__link_active');
+    $(this).addClass('mainNav__link_active');
+    filterId('atmosphere');
+  });
+  $('#poeople').click( function(e) {
+    e.preventDefault();
+    $('.mainNav__link').removeClass('mainNav__link_active');
+    $(this).addClass('mainNav__link_active');
+    filterId('people');
+  });
+  $('#all').click(function(e) {
+    e.preventDefault();
+    $('.mainNav__link').removeClass('mainNav__link_active');
+    $(this).addClass('mainNav__link_active');
+    $('.country-slider').fadeIn(300);
+    fId = 'all';
+  });
 
 });
