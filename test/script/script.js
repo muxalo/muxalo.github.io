@@ -1,21 +1,28 @@
-  /*  lazyload*/
-
-$(function() {
-  $("img.lazy").lazyload({
-     effect : "fadeIn",
-     failure_limit : 1
-   });
-});
-
   /*  FancyBox*/
 
 $(document).ready(function() {
   $(".fancybox").fancybox();
 });
 
-    /* SLIDER */
-
 $(function() {
+
+  /*  logo hover*/
+
+  $('.logo__img').mouseover(function(){
+    $('.header').css('background', '#22539d');
+  }).mouseout(function(){
+    $('.header').attr('style', '');
+  });
+
+  /*  lazyload*/
+
+  $("img.lazy").lazyload({
+   effect : "fadeIn",
+   failure_limit : 1
+  });
+
+  /* SLIDER */
+
   var next = $('.country__arrow_next');
   var prev = $('.country__arrow_prev');
   var counter = 1000;
@@ -60,51 +67,66 @@ $(function() {
   /* FILTER */
 
   var fActive = '';
+
   function filterId(id) {
     if (fActive != id) {
-      $('.country-slider').fadeOut(200);
-      $('.country-slider').filter('.' + id).delay(300).fadeIn(300);
-      $("img.lazy").lazyload({
-        container : $('.countries'),
-        failure_limit : 1
-       });
+      $('.country-slider').addClass('country-slider_desibled');
+      $('.country_big').removeClass('country-slider_desibled').addClass('country-slider_big_desibled');
+
+      $('.country-slider').filter('.' + id).removeClass('country-slider_desibled');
+      $('.country_big').filter('.' + id).removeClass('country-slider_big_desibled');
+
+      if (id == 'all') {
+        $('.country-slider').removeClass('country-slider_desibled');
+        $('.country_big').removeClass('country-slider_big_desibled');
+      }
+
       fActive = id;
     }
+
+    $("img.lazy").lazyload({
+      container : $('.countries'),
+      failure_limit : 1
+    });
   }
+
   $('#culture').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     filterId('culture');
   });
+
   $('#extreme').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     filterId('extreme');
   });
+
   $('#atmosphere').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     filterId('atmosphere');
   });
+
   $('#people').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     filterId('people');
   });
+
   $('#all').click( function(e) {
     e.preventDefault();
     $('.mainNav__link').removeClass('mainNav__link_active');
     $(this).addClass('mainNav__link_active');
     $('.country-slider').fadeIn(300);
     if ($(window).width() <= 640) {
-      console.log('сработал');
       $('.country_big').css('display', 'none');
     }
-    fActive = 'all';
+    filterId('all');
   });
 
 });

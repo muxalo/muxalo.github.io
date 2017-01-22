@@ -102,7 +102,7 @@
 .fancybox-close {
 	position: absolute;
 	background-image: url('../image/svg/icon_close.svg');
-	opacity: 0.5;
+	opacity: 0.2;
 	top: -20px;
 	right: -20px;
 	width: 30px;
@@ -112,7 +112,7 @@
 }
 
 .fancybox-close:hover {
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .fancybox-nav {
